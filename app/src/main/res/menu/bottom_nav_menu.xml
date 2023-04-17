@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeBN"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="" />
+    <item
+        android:id="@+id/searchBN"
+        android:enabled="true"
+        android:icon="@drawable/ic_search"
+        android:title="" />
+
+    <item
+        android:id="@+id/micBN"
+        android:enabled="true"
+        android:icon="@drawable/ic_mic"
+        android:title="" />
+    <item
+        android:id="@+id/notificationBN"
+        android:enabled="true"
+        android:icon="@drawable/ic_notifications"
+        android:title="" />
+
+    <item
+        android:id="@+id/mailBN"
+        android:enabled="true"
+        android:icon="@drawable/ic_mail"
+        android:title="" />
+
+</menu>
