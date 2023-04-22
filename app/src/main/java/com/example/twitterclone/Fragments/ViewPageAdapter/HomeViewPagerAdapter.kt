@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentPagerAdapter
 import com.example.twitterclone.Fragments.Home.HomeFollowingFragment
 import com.example.twitterclone.Fragments.Home.HomeForYouFragment
 
-class HomePageAdapter(fm:FragmentManager) : FragmentPagerAdapter(fm) {
+class HomeViewPagerAdapter(fm:FragmentManager) : FragmentPagerAdapter(fm) {
     override fun getCount(): Int {
         return 2;
     }

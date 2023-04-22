@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SearchResultActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SearchResultActivity"
+    style="@style/SCREEN"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/searchResultTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable"/>
+
+    <FrameLayout
+        android:id="@+id/searchResult_FrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/searchResultViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/searchResult_FAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/FAB"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:contentDescription="fb"
+            app:srcCompat="@drawable/ic_add" />
+
+    </FrameLayout>
+
+</LinearLayout>

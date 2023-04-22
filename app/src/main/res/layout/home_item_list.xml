@@ -1,6 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/SCREEN">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage_home"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/PRIMARYTEXT"
+        android:layout_marginStart="15dp"
+        android:maxLines="1"
+        android:text="saurabh"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/profileImage_home"
+        app:layout_constraintTop_toTopOf="@+id/profileImage_home" />
+
+    <TextView
+        android:id="@+id/userName_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SECONDARYTEXT"
+        android:layout_marginStart="5dp"
+        android:maxLines="1"
+        android:text="saurabh"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/name_home"
+        app:layout_constraintStart_toEndOf="@+id/name_home"
+        app:layout_constraintTop_toTopOf="@+id/name_home" />
+
+    <TextView
+        android:id="@+id/publishedTime_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SECONDARYTEXT"
+        android:layout_marginEnd="4dp"
+        android:maxLines="1"
+        android:text="2d"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/userName_home"
+        app:layout_constraintEnd_toStartOf="@+id/iconMore_home"
+        app:layout_constraintTop_toTopOf="@+id/userName_home" />
+
+    <ImageView
+        android:id="@+id/iconMore_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SECONDARYICON"
+        android:src="@drawable/ic_more"
+        app:layout_constraintBottom_toBottomOf="@+id/publishedTime_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/publishedTime_home"/>
+
+    <TextView
+        android:id="@+id/tweetBody_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="kjsd jdskfh df dsbvkljsf puwoh nv sbvlshfgrpuwi doss snvklsjfbvpiwuhf dolkksdnv kjsbv rwhgfwuih sllnv "
+        style="@style/PRIMARYTEXT"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/profileImage_home"
+        app:layout_constraintTop_toBottomOf="@+id/name_home" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tweetBody_home">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <View
+        android:id="@+id/viewHome"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@+id/profileImageForThread_home"
+        tools:layout_editor_absoluteX="-29dp" />
+
+
+    <ImageView
+        android:id="@+id/imgComments_home"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="@style/PRIMARYICON"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_chat"
+        app:layout_constraintEnd_toStartOf="@+id/imgRetweets_home"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/card_home"/>
+
+    <ImageView
+        android:id="@+id/imgRetweets_home"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="@style/PRIMARYICON"
+        android:src="@drawable/ic_repeat"
+        app:layout_constraintEnd_toStartOf="@+id/imgLike_home"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgComments_home"
+        app:layout_constraintTop_toTopOf="@+id/imgComments_home" />
+
+    <ImageView
+        android:id="@+id/imgLike_home"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="@style/PRIMARYICON"
+        android:src="@drawable/ic_like"
+        app:layout_constraintEnd_toStartOf="@+id/imgBookmark_home"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgRetweets_home"
+        app:layout_constraintTop_toTopOf="@+id/imgRetweets_home" />
+
+    <ImageView
+        android:id="@+id/imgBookmark_home"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="@style/PRIMARYICON"
+        android:src="@drawable/ic_bookmark"
+        app:layout_constraintEnd_toStartOf="@+id/imgShare_home"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgLike_home"
+        app:layout_constraintTop_toTopOf="@+id/imgLike_home" />
+
+    <ImageView
+        android:id="@+id/imgShare_home"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="@style/PRIMARYICON"
+        android:src="@drawable/ic_share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgBookmark_home"
+        app:layout_constraintTop_toTopOf="@+id/imgBookmark_home" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImageForThread_home"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="@+id/profileImage_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgComments_home" />
+
+    <TextView
+        android:id="@+id/showThreats_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TERTIARYTEXT"
+        android:text="@string/show_this_thread"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profileImageForThread_home"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/profileImageForThread_home" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/profileImage_home"
+        app:layout_constraintStart_toStartOf="@+id/profileImage_home"
+        app:layout_constraintTop_toBottomOf="@+id/profileImage_home" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1970803" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

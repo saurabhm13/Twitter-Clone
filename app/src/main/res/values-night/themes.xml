@@ -2,15 +2,48 @@
     <!-- Base application theme. -->
     <style name="Theme.TwitterClone" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimary">@color/p1</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondary">@color/p2</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSecondary">@color/teal_200</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">#000000</item>
         <!-- Customize your theme here. -->
+
+
+        <item name="colorOnSurface">@color/primary_white</item>
+        <item name="colorOnSurfaceVariant">@color/secondary_white</item>
+        <item name="colorOnSurfaceInverse">@color/p1</item>
+
     </style>
+
+
+    <style name="SCREEN">
+        <item name="android:background">#000000</item>
+    </style>
+
+    <style name="PRIMARYTEXT">
+        <item name="android:textColor">@color/primary_white</item>
+    </style>
+
+    <style name="SECONDARYTEXT">
+        <item name="android:textColor">@color/secondary_white</item>
+    </style>
+
+    <style name="TERTIARYTEXT">
+        <item name="android:textColor">@color/p1</item>
+    </style>
+
+    <style name="SECONDARYBUTTON">
+        <item name="android:backgroundTint">@color/primary_white</item>
+        <item name="android:textColor">@color/primary_black</item>
+    </style>
+
+    <style name="ICONSCOLOR">
+        <item name="android:tint">#FFFFFF</item>
+    </style>
+
 </resources>

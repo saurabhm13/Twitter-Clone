@@ -7,14 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.twitterclone.R
 
-class TopSearchResultFragment : Fragment() {
+class LatestSearchResultFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_top_search_result, container, false)
+        return inflater.inflate(R.layout.fragment_latest_search_result, container, false)
     }
 
 }
