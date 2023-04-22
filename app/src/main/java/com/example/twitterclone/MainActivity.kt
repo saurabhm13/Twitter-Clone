@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var mainViewPager: ViewPager
     lateinit var bottomNavView: BottomNavigationView
-    lateinit var mainFAB: FloatingActionButton
+    lateinit var mainFAB: ExtendedFloatingActionButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

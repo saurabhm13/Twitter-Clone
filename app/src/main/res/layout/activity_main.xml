@@ -2,10 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SCREEN"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    style="@style/SCREEN"
     tools:context=".MainActivity">
 
     <FrameLayout
@@ -17,33 +17,31 @@
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/mainViewPager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
 
-<!--        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton-->
-<!--            android:id="@+id/tweeterSpaceFAB"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_margin="8dp"-->
-<!--            android:contentDescription="@string/extended_FB_Desc"-->
-<!--            android:text="@string/new_tweets"-->
-<!--            android:textColor="@color/white"-->
-<!--            android:textAllCaps="false"-->
-<!--            app:icon="@drawable/ic_arrow_upward"-->
-<!--            app:iconTint="@color/white"-->
-<!--            android:layout_gravity="top|center"-->
-<!--            android:visibility="visible"/>-->
+        <!--        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton-->
+        <!--            android:id="@+id/tweeterSpaceFAB"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_margin="8dp"-->
+        <!--            android:contentDescription="@string/extended_FB_Desc"-->
+        <!--            android:text="@string/new_tweets"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textAllCaps="false"-->
+        <!--            app:icon="@drawable/ic_arrow_upward"-->
+        <!--            app:iconTint="@color/white"-->
+        <!--            android:layout_gravity="top|center"-->
+        <!--            android:visibility="visible"/>-->
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/mainFAB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/FAB"
-            android:layout_margin="8dp"
-            android:contentDescription="@string/main_FB_Desc"
-            android:textAllCaps="false"
-            app:icon="@drawable/ic_add"
             android:layout_gravity="bottom|end"
-            android:visibility="visible"/>
+            android:layout_margin="16dp"
+            android:contentDescription="@string/extended_FB_Desc"
+            app:icon="@drawable/ic_add" />
 
     </FrameLayout>
 
