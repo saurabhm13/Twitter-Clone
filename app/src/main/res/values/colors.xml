@@ -13,6 +13,12 @@
     <color name="primary_white">#E7E9EA</color>
     <color name="secondary_white">#71767B</color>
 
+    <color name="spaces_card_p1">#FFB57CF8</color>
+    <color name="spaces_card_p2">#FFAA64FF</color>
+
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#858181</color>
+    <color name="red">#FF0000</color>
+
+
 </resources>

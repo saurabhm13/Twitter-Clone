@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,281 +7,292 @@
     android:paddingTop="10dp"
     android:paddingStart="15dp"
     android:paddingEnd="15dp"
+    android:orientation="vertical"
     style="@style/SCREEN"
     tools:context=".ThreadActivity">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profileImage_thread"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:src="@drawable/ic_launcher_background"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/name_thread"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/PRIMARYTEXT"
-        android:text="Name"
-        android:layout_marginStart="15dp"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/profileImage_thread"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/userName_thread"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/SECONDARYTEXT"
-        android:layout_marginStart="15dp"
-        android:text="userName"
-        android:textColor="@color/gray"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/profileImage_thread"
-        app:layout_constraintStart_toEndOf="@+id/profileImage_thread"
-        app:layout_constraintTop_toBottomOf="@+id/name_thread" />
-
-    <TextView
-        android:id="@+id/tweetBody_thread"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/PRIMARYTEXT"
-        android:layout_marginTop="10dp"
-        android:text="sdjfkh uyrbgf djf yduf jb dksjfsuyf jdh bvskjhusfuvbjsk hfienciidse h hkjlsahf ujv cvbsl"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/profileImage_thread"
-        app:layout_constraintTop_toBottomOf="@+id/profileImage_thread" />
-
-    <TextView
-        android:id="@+id/tweetTime_thread"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/SECONDARYTEXT"
-        android:text="9:04 pm"
-        android:textSize="18sp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="@+id/tweetBody_thread"
-        app:layout_constraintTop_toBottomOf="@+id/tweetBody_thread" />
-
-    <TextView
-        android:id="@+id/tweetDate_thread"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/SECONDARYTEXT"
-        android:layout_marginStart="10dp"
-        android:text="17 Apr 23"
-        android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/tweetTime_thread"
-        app:layout_constraintTop_toTopOf="@+id/tweetTime_thread" />
-
-
-    <TextView
-        android:id="@+id/tweetViews_thread"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/PRIMARYTEXT"
-        android:layout_marginStart="10dp"
-        android:text="1.1M"
-        android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/tweetDate_thread"
-        app:layout_constraintTop_toTopOf="@+id/tweetDate_thread" />
-
-    <TextView
-        android:id="@+id/txtView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/SECONDARYTEXT"
-        android:layout_marginStart="5dp"
-        android:text="@string/view"
-        android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/tweetViews_thread"
-        app:layout_constraintTop_toTopOf="@+id/tweetViews_thread" />
-
-    <View
-        android:id="@+id/view2"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="0.8dp"
-        style="@style/SECONDARYTEXT"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tweetViews_thread" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
 
-    <TextView
-        android:id="@+id/retweets_thread"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/PRIMARYTEXT"
-        android:text="852"
-        android:layout_marginTop="10dp"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toBottomOf="@+id/view2" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage_thread"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/txtRetweets_thread"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/SECONDARYTEXT"
-        android:text="@string/retweets"
-        android:layout_marginStart="5dp"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/retweets_thread"
-        app:layout_constraintTop_toTopOf="@+id/retweets_thread" />
-
-    <TextView
-        android:id="@+id/quotes_thread"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/PRIMARYTEXT"
-        android:text="33"
-        android:layout_marginStart="10dp"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/txtRetweets_thread"
-        app:layout_constraintTop_toTopOf="@+id/txtRetweets_thread" />
-
-    <TextView
-        android:id="@+id/txtQuotes_thread"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/SECONDARYTEXT"
-        android:layout_marginStart="5dp"
-        android:text="@string/quotes"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/quotes_thread"
-        app:layout_constraintTop_toTopOf="@+id/quotes_thread" />
-
-    <TextView
-        android:id="@+id/likes_thread"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/PRIMARYTEXT"
-        android:layout_marginStart="10dp"
-        android:text="852"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/txtQuotes_thread"
-        app:layout_constraintTop_toTopOf="@+id/txtQuotes_thread" />
-
-    <TextView
-        android:id="@+id/txtLike_thread"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/SECONDARYTEXT"
-        android:layout_marginStart="5dp"
-        android:text="@string/like"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/likes_thread"
-        app:layout_constraintTop_toTopOf="@+id/likes_thread" />
-
-    <View
-        android:id="@+id/view3"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:backgroundTint="#ECDCDC"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtQuotes_thread" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout_people"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view3">
-
-        <ImageView
-            android:id="@+id/imgComments_home"
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/name_thread"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            style="@style/PRIMARYICON"
-            android:src="@drawable/ic_chat"/>
+            style="@style/PRIMARYTEXT"
+            android:text="Name"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/profileImage_thread"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imgRetweets_home"
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/userName_thread"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            style="@style/PRIMARYICON"
-            android:src="@drawable/ic_repeat" />
+            style="@style/SECONDARYTEXT"
+            android:layout_marginStart="15dp"
+            android:text="userName"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/profileImage_thread"
+            app:layout_constraintStart_toEndOf="@+id/profileImage_thread"
+            app:layout_constraintTop_toBottomOf="@+id/name_thread" />
 
-        <ImageView
-            android:id="@+id/imgLike_home"
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/tweetBody_thread"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            style="@style/PRIMARYICON"
-            android:src="@drawable/ic_like" />
+            style="@style/PRIMARYTEXT"
+            android:layout_marginTop="10dp"
+            android:text="sdjfkh uyrbgf djf yduf jb dksjfsuyf jdh bvskjhusfuvbjsk hfienciidse h hkjlsahf ujv cvbsl"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/profileImage_thread"
+            app:layout_constraintTop_toBottomOf="@+id/profileImage_thread" />
 
-        <ImageView
-            android:id="@+id/imgBookmark_home"
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/tweetTime_thread"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            style="@style/PRIMARYICON"
-            android:src="@drawable/ic_bookmark" />
+            style="@style/SECONDARYTEXT"
+            android:text="9:04 pm"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@+id/tweetBody_thread"
+            app:layout_constraintTop_toBottomOf="@+id/tweetBody_thread" />
 
-        <ImageView
-            android:id="@+id/imgShare_home"
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/tweetDate_thread"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            style="@style/PRIMARYICON"
-            android:src="@drawable/ic_share" />
+            style="@style/SECONDARYTEXT"
+            android:layout_marginStart="10dp"
+            android:text="17 Apr 23"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/tweetTime_thread"
+            app:layout_constraintTop_toTopOf="@+id/tweetTime_thread" />
 
-    </LinearLayout>
 
-    <View
-        android:id="@+id/view4"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        style="@style/SECONDARYTEXT"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout_people" />
+        <TextView
+            android:id="@+id/tweetViews_thread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/PRIMARYTEXT"
+            android:layout_marginStart="10dp"
+            android:text="1.1M"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/tweetDate_thread"
+            app:layout_constraintTop_toTopOf="@+id/tweetDate_thread" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/thread_recyclerView"
+        <TextView
+            android:id="@+id/txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SECONDARYTEXT"
+            android:layout_marginStart="5dp"
+            android:text="@string/view"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/tweetViews_thread"
+            app:layout_constraintTop_toTopOf="@+id/tweetViews_thread" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            style="@style/SECONDARYTEXT"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tweetViews_thread" />
+
+        <TextView
+            android:id="@+id/retweets_thread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/PRIMARYTEXT"
+            android:text="852"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <TextView
+            android:id="@+id/txtRetweets_thread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SECONDARYTEXT"
+            android:text="@string/retweets"
+            android:layout_marginStart="5dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/retweets_thread"
+            app:layout_constraintTop_toTopOf="@+id/retweets_thread" />
+
+        <TextView
+            android:id="@+id/quotes_thread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/PRIMARYTEXT"
+            android:text="33"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/txtRetweets_thread"
+            app:layout_constraintTop_toTopOf="@+id/txtRetweets_thread" />
+
+        <TextView
+            android:id="@+id/txtQuotes_thread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SECONDARYTEXT"
+            android:layout_marginStart="5dp"
+            android:text="@string/quotes"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/quotes_thread"
+            app:layout_constraintTop_toTopOf="@+id/quotes_thread" />
+
+        <TextView
+            android:id="@+id/likes_thread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/PRIMARYTEXT"
+            android:layout_marginStart="10dp"
+            android:text="852"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/txtQuotes_thread"
+            app:layout_constraintTop_toTopOf="@+id/txtQuotes_thread" />
+
+        <TextView
+            android:id="@+id/txtLike_thread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SECONDARYTEXT"
+            android:layout_marginStart="5dp"
+            android:text="@string/like"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/likes_thread"
+            app:layout_constraintTop_toTopOf="@+id/likes_thread" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:backgroundTint="#ECDCDC"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtQuotes_thread" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_people"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3">
+
+            <ImageView
+                android:id="@+id/imgComments_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/PRIMARYICON"
+                android:src="@drawable/ic_chat"/>
+
+            <ImageView
+                android:id="@+id/imgRetweets_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/PRIMARYICON"
+                android:src="@drawable/ic_repeat" />
+
+            <ImageView
+                android:id="@+id/imgLike_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/PRIMARYICON"
+                android:src="@drawable/ic_like" />
+
+            <ImageView
+                android:id="@+id/imgBookmark_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/PRIMARYICON"
+                android:src="@drawable/ic_bookmark" />
+
+            <ImageView
+                android:id="@+id/imgShare_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/PRIMARYICON"
+                android:src="@drawable/ic_share" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            style="@style/SECONDARYTEXT"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout_people" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/thread_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/home_item_list"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/threadComments_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/home_item_list"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thread_recyclerView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tweetComment_thread"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        tools:listitem="@layout/home_item_list"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view4" />
+        android:hint="Tweet your reply"
+        app:endIconDrawable="@drawable/ic_camera"
+        app:endIconMode="custom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="15dp">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/threadComments_recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        tools:listitem="@layout/home_item_list"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/thread_recyclerView" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"/>
 
-<!--    <com.google.android.material.textfield.TextInputLayout-->
-<!--        android:id="@+id/tweetComment_thread"-->
-<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:hint="Tweet your reply"-->
-<!--        app:endIconDrawable="@drawable/ic_camera"-->
-<!--        app:endIconMode="custom"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        tools:layout_editor_absoluteX="15dp">-->
-
-<!--        <com.google.android.material.textfield.TextInputEditText-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginBottom="5dp"/>-->
-
-<!--    </com.google.android.material.textfield.TextInputLayout>-->
+    </com.google.android.material.textfield.TextInputLayout>
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
