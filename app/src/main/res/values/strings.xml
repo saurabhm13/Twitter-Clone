@@ -20,7 +20,23 @@
     <string name="listening">listening</string>
     <string name="host">Host</string>
     <string name="start_listening_text">Your mic will be off to start with</string>
-
-
+    <string name="signup_message">See what\'s happening in the world right now</string>
+    <string name="policies">By signing up, you agree to our Terms, privacy Policy, and Cookies Use.</string>
+    <string name="have_account_already">Have an account already?</string>
+    <string name="continue_with_google">Continue with button</string>
+    <string name="create_account">Create account</string>
+    <string name="signup_text">To get started, first enter your phone, email, or @username</string>
+    <string name="login_username">Phone, email, or username</string>
+    <string name="password">Password</string>
+    <string name="login">Log in</string>
+    <string name="signup">Sign up</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="dob_not_showing">This will not be showing publicly. Conform your age, even if this account is for a business, a pet, or something else.</string>
+    <string name="next">Next</string>
+    <string name="use_email_instead">Use email instead</string>
+    <string name="signup_TnC">By signing up, you agree yo the Terms of Service and Private Policy, including Cookie Use. Twitter may use your content information, including your email address and phone number for purpose outlined in our Privacy Policy, like keeping your account secure and personalizing our services, including ads. Learn more. Other will be able find you by email or phone number, when provided, unless you choose otherwise here.</string>
 
 </resources>

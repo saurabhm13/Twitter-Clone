@@ -12,6 +12,18 @@
         android:theme="@style/Theme.TwitterClone"
         tools:targetApi="31">
         <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GoogleLoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".SearchResultActivity"
             android:exported="false" />
         <activity
