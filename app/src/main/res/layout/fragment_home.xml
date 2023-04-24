@@ -21,8 +21,7 @@
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/homeViewPager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/homeTabLayout"/>
+            android:layout_height="match_parent"/>
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/newTweetsFAB"

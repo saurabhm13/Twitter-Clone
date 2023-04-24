@@ -27,14 +27,17 @@
 
     <style name="PRIMARYTEXT">
         <item name="android:textColor">@color/primary_white</item>
+        <item name="fontFamily">@font/roboto</item>
     </style>
 
     <style name="SECONDARYTEXT">
         <item name="android:textColor">@color/secondary_white</item>
+        <item name="fontFamily">@font/roboto</item>
     </style>
 
     <style name="TERTIARYTEXT">
         <item name="android:textColor">@color/p1</item>
+        <item name="fontFamily">@font/roboto</item>
     </style>
 
     <style name="SECONDARYBUTTON">
@@ -44,6 +47,10 @@
 
     <style name="ICONSCOLOR">
         <item name="android:tint">#FFFFFF</item>
+    </style>
+
+    <style name="IMAGEBORDER">
+        <item name="civ_border_color">#000000</item>
     </style>
 
 </resources>

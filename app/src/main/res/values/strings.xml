@@ -14,6 +14,7 @@
     <string name="view">View</string>
     <string name="show_this_thread">Show this thread</string>
     <string name="long_text">TabLayout provides a horizontal layout to display tabs. Population of the tabs to display is done through TabLayout. Tab instances. You create tabs via newTab() From there you can change the tab\'s label or icon via TabLayout</string>
+    <string name="long_short_text">TabLayout provides a horizontal layout to display tabs. Population of the tabs to display is done through TabLayout.</string>
     <string name="txt_spaces_title1">Happening Now</string>
     <string name="txt_spaces_title2">Spaces going on right now</string>
     <string name="live">Live</string>
@@ -38,5 +39,10 @@
     <string name="next">Next</string>
     <string name="use_email_instead">Use email instead</string>
     <string name="signup_TnC">By signing up, you agree yo the Terms of Service and Private Policy, including Cookie Use. Twitter may use your content information, including your email address and phone number for purpose outlined in our Privacy Policy, like keeping your account secure and personalizing our services, including ads. Learn more. Other will be able find you by email or phone number, when provided, unless you choose otherwise here.</string>
+    <string name="follow">Follow</string>
+    <string name="username">username</string>
+    <string name="following_no">121</string>
+    <string name="following">Following</string>
+    <string name="not_followed_by_any_youre_following">Not followed by any you\'re following</string>
 
 </resources>
