@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
@@ -28,8 +29,21 @@ class MainActivity : AppCompatActivity() {
 
         mainFAB.setOnClickListener(View.OnClickListener {
 
-            val inToSearchResult = Intent(this, SearchResultActivity::class.java)
-            startActivity(inToSearchResult)
+            val currentFragment = supportFragmentManager.findFragmentById(R.id.frameLayout)
+
+            if (currentFragment is SpacesFragment) {
+                // perform action for Fragment1
+                Toast.makeText(this@MainActivity, "spaces", Toast.LENGTH_SHORT).show()
+
+            } else if (currentFragment is MessageFragment) {
+                // perform action for Fragment2
+                Toast.makeText(this@MainActivity, "Message", Toast.LENGTH_SHORT).show()
+            }else{
+                Toast.makeText(this@MainActivity, "New Tweet", Toast.LENGTH_SHORT).show()
+            }
+
+//            val inToSearchResult = Intent(this, SearchResultActivity::class.java)
+//            startActivity(inToSearchResult)
         })
 
         bottomNavView.setOnItemSelectedListener { item ->
@@ -62,8 +76,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnTextUI.setOnClickListener(View.OnClickListener {
-            val inToGoogleLoginActivity = Intent(this, GoogleLoginActivity::class.java)
-            startActivity(inToGoogleLoginActivity)
+            val intent = Intent(this, NewTweetActivity::class.java)
+            startActivity(intent)
         })
 
     }

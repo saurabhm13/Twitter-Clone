@@ -1,7 +1,9 @@
 package com.example.twitterclone;
 
+import android.content.Context;
 import android.content.Intent;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.viewpager.widget.ViewPager;
 
@@ -12,6 +14,8 @@ public class example {
     ViewPager viewPager;
 
     FloatingActionButton mainFAB;
+
+    Context context;
 
     public ViewPager getViewPager() {
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -31,7 +35,6 @@ public class example {
             }
         });
         return viewPager;
-
 
 
     }

@@ -44,5 +44,9 @@
     <string name="following_no">121</string>
     <string name="following">Following</string>
     <string name="not_followed_by_any_youre_following">Not followed by any you\'re following</string>
+    <string name="txt_public">Public</string>
+    <string name="what_s_happening">What\'s Happening</string>
+    <string name="tweet">Tweet</string>
+    <string name="everyone_can_reply">Everyone can reply</string>
 
 </resources>
