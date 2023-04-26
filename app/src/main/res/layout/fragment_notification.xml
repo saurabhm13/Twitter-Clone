@@ -6,10 +6,16 @@
     style="@style/SCREEN"
     tools:context=".Fragments.NotificationFragment">
 
+    <include
+        android:id="@+id/notification_topBar"
+        layout="@layout/notification_top_bar"/>
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/notificationTabLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notification_topBar"
+        style="@style/TAB"/>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/notificationViewPager"

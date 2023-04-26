@@ -48,5 +48,9 @@
     <string name="what_s_happening">What\'s Happening</string>
     <string name="tweet">Tweet</string>
     <string name="everyone_can_reply">Everyone can reply</string>
+    <string name="search_twitter">Search Twitter</string>
+    <string name="notification">Notification</string>
+    <string name="spaces">Spaces</string>
+    <string name="search_direct_message">Search Direct Message</string>
 
 </resources>

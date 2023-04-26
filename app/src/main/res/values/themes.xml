@@ -68,4 +68,21 @@
         <item name="civ_border_color">#FFFFFF</item>
     </style>
 
+    <style name="TAB">
+        <item name="android:background">#FFFFFF</item>
+<!--        <item name="android:textColor">@color/secondary_black</item>-->
+        <item name="tabTextColor">#000</item>
+        <item name="tabSelectedTextColor">@color/primary_black</item>
+    </style>
+
+    <style name="TABTEXT">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/secondary_black</item>
+    </style>
+
+    <style name="BOTTOMNAV">
+        <item name="itemIconTint">#000000</item>
+    </style>
+
 </resources>
