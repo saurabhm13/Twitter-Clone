@@ -24,7 +24,7 @@
     <string name="signup_message">See what\'s happening in the world right now</string>
     <string name="policies">By signing up, you agree to our Terms, privacy Policy, and Cookies Use.</string>
     <string name="have_account_already">Have an account already?</string>
-    <string name="continue_with_google">Continue with button</string>
+    <string name="continue_with_google">Continue with Google</string>
     <string name="create_account">Create account</string>
     <string name="signup_text">To get started, first enter your phone, email, or @username</string>
     <string name="login_username">Phone, email, or username</string>
@@ -52,5 +52,7 @@
     <string name="notification">Notification</string>
     <string name="spaces">Spaces</string>
     <string name="search_direct_message">Search Direct Message</string>
+    <string name="email">Email</string>
+    <string name="log_in">Log in</string>
 
 </resources>
